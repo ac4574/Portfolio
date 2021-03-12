@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
+import Header from './Header'
 
 export default function Layout({ children }) {
   return (
@@ -21,6 +22,8 @@ export default function Layout({ children }) {
           <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="content-wrap">
+        <Header />
+        <hr/>
         <Navbar />
         <main>{children}</main>
       </div>
@@ -34,7 +37,8 @@ export default function Layout({ children }) {
           padding-bottom: 12rem;
         }
         #content-wrap {
-          margin-top: 50px;
+          width: 80vw;
+          margin: 0 auto;
         }
       `}
       </style>
