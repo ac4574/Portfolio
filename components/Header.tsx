@@ -15,13 +15,13 @@ export default function Header() {
       </div>
       <div className="header-right">
         <a
-          href="https://github.com/DigitalTranslate/ReactHookify"
+          href="https://www.linkedin.com/in/andersonchan4574/"
           aria-label="LinkedIn"
         >
           <LinkedInIcon fontSize="large" />
         </a>
         <a
-          href="https://github.com/DigitalTranslate/ReactHookify"
+          href="https://github.com/ac4574"
           aria-label="Github"
         >
           <GitHubIcon fontSize="large" />
@@ -37,6 +37,12 @@ export default function Header() {
         .header-right {
           display: flex;
           align-items: center;
+        }
+        #home-button img{
+          height: 5em;
+        }
+        a {
+          color: white;
         }
       `}
       </style>

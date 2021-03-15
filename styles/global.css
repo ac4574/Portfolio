@@ -6,7 +6,8 @@ ADD ANY CSS THAT WILL BE USED ON EVERY PAGE HERE
 
 html {
   min-height: 100vh;
-  background-color: #aedfd1;
+  background-color: #1f1d1d;
+  color: white;
 }
 
 body {
