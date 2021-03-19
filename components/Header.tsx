@@ -39,7 +39,7 @@ export default function Header() {
           align-items: center;
         }
         #home-button img{
-          height: 4.5em;
+          height: 4em;
         }
         a {
           color: white;
