@@ -5,6 +5,9 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import Projects from './Projects'
+import About from './About'
+import Contact from './Contact'
 
 const AntTabs = withStyles({
   root: {
@@ -67,18 +70,23 @@ export default function Navbar() {
     setValue(newValue);
   }
   return (
-    <nav>
-      <div className={classes.root}>
-        <div className={classes.tabs}>
-          <AntTabs value={value} onChange={handleChange} aria-label="ant example">
-            <AntTab label="Home" />
-            <AntTab label="Projects" />
-            <AntTab label="About" />
-            <AntTab label="Contact" />
-          </AntTabs>
-          <Typography className={classes.padding} />
+    <>
+      <nav>
+        <div className={classes.root}>
+          <div className={classes.tabs}>
+            <AntTabs value={value} onChange={handleChange} aria-label="tabs">
+              <AntTab label="Home"/>
+              <AntTab value="about" label="About" />
+              <AntTab value="projects" label="Projects"/>
+              <AntTab value="contact" label="Contact"  />
+            </AntTabs>
+            <Typography className={classes.padding} />
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      {value === 'about' ? <About/> : ''}
+      {value === 'projects' ? <Projects/> : ''}
+      {value === 'contact' ? <Contact/> : ''}
+    </>
   )
 }
