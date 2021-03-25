@@ -33,6 +33,9 @@ export default function Header() {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          margin-left: 30vw;
+          margin-right: 30vw;
+          margin-top: .5em;
         }
         .header-right {
           display: flex;

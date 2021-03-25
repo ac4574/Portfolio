@@ -1,8 +1,16 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
 import Header from './Header'
+import React from 'react';
+import Projects from './Projects'
+import About from './About'
+import Contact from './Contact'
+import Home from './Home'
+
 
 export default function Layout({ children }) {
+  const [value, setValue] = React.useState('home');
+
   return (
     <div id="page-container">
       <Head>
@@ -21,12 +29,16 @@ export default function Layout({ children }) {
           />
           <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="content-wrap">
+      <div id="header">
         <Header />
-        <hr/>
-        <Navbar />
+        {/* <hr/> */}
+        <Navbar value={value} setValue={setValue}/>
         <main>{children}</main>
       </div>
+      {value === 'home' ? <Home/> : ''}
+      {value === 'about' ? <About/> : ''}
+      {value === 'projects' ? <Projects/> : ''}
+      {value === 'contact' ? <Contact/> : ''}
 
       <style jsx>
       {`
@@ -36,8 +48,8 @@ export default function Layout({ children }) {
           width: 100%;
           padding-bottom: 12rem;
         }
-        #content-wrap {
-          width: 80vw;
+        #header {
+          width: 99vw;
           margin: 0 auto;
         }
       `}

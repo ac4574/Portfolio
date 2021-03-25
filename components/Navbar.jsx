@@ -5,16 +5,14 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Projects from './Projects'
-import About from './About'
-import Contact from './Contact'
+
 
 const AntTabs = withStyles({
   root: {
-    borderBottom: '1px solid #e8e8e8',
+    // borderBottom: '1px solid #e8e8e8',
   },
   indicator: {
-    backgroundColor: '#1890ff',
+    backgroundColor: '#8B2635',
   },
 })(Tabs);
 
@@ -37,15 +35,15 @@ const AntTab = withStyles((theme) => ({
       '"Segoe UI Symbol"',
     ].join(','),
     '&:hover': {
-      color: '#40a9ff',
+      color: '#8B2635',
       opacity: 1,
     },
     '&$selected': {
-      color: '#1890ff',
+      color: '#8B2635',
       fontWeight: theme.typography.fontWeightMedium,
     },
     '&:focus': {
-      color: '#40a9ff',
+      color: '#8B2635',
     },
   },
   selected: {},
@@ -56,15 +54,16 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   padding: {
-    padding: theme.spacing(3),
+    padding: theme.spacing(1),
   },
   tabs: {
   },
 }));
 
-export default function Navbar() {
+export default function Navbar(props) {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const value = props.value
+  const setValue = props.setValue
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -75,7 +74,7 @@ export default function Navbar() {
         <div className={classes.root}>
           <div className={classes.tabs}>
             <AntTabs value={value} onChange={handleChange} aria-label="tabs">
-              <AntTab label="Home"/>
+              <AntTab value="home" label="Home"/>
               <AntTab value="about" label="About" />
               <AntTab value="projects" label="Projects"/>
               <AntTab value="contact" label="Contact"  />
@@ -84,9 +83,16 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      {value === 'about' ? <About/> : ''}
-      {value === 'projects' ? <Projects/> : ''}
-      {value === 'contact' ? <Contact/> : ''}
+      <style jsx>
+      {`
+        nav {
+          display: flex;
+          margin-left: 40vw;
+          margin-right: 40vw;
+
+        }
+      `}
+      </style>
     </>
   )
 }
