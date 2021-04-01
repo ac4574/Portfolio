@@ -4,10 +4,13 @@ export default class projectsPage extends Component {
   render() {
     return (
       <div className="projects">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
 
       <style jsx>
       {`
