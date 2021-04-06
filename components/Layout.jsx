@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
-import Header from './Header'
+// import Header from './Header'
 import React from 'react';
 import Projects from './Projects'
 import About from './About'
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
           <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="header">
-        <Header />
+        {/* <Header /> */}
         {/* <hr/> */}
         <Navbar value={value} setValue={setValue}/>
         <main>{children}</main>
@@ -46,10 +46,11 @@ export default function Layout({ children }) {
           position: relative;
           min-height: 100vh;
           width: 100%;
+          padding-top: 8.5em;
           padding-bottom: 12rem;
         }
         #header {
-          width: 99vw;
+          width: 100vw;
           margin: 0 auto;
         }
       `}

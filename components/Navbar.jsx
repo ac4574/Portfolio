@@ -5,6 +5,8 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
 
 const AntTabs = withStyles({
@@ -12,7 +14,7 @@ const AntTabs = withStyles({
     // borderBottom: '1px solid #e8e8e8',
   },
   indicator: {
-    backgroundColor: '#8B2635',
+    backgroundColor: '#7D98A1',
   },
 })(Tabs);
 
@@ -21,7 +23,7 @@ const AntTab = withStyles((theme) => ({
     textTransform: 'none',
     minWidth: 72,
     fontWeight: theme.typography.fontWeightRegular,
-    marginRight: theme.spacing(4),
+    marginRight: theme.spacing(2),
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
@@ -35,15 +37,15 @@ const AntTab = withStyles((theme) => ({
       '"Segoe UI Symbol"',
     ].join(','),
     '&:hover': {
-      color: '#8B2635',
+      color: '#7D98A1',
       opacity: 1,
     },
     '&$selected': {
-      color: '#8B2635',
+      color: '#7D98A1',
       fontWeight: theme.typography.fontWeightMedium,
     },
     '&:focus': {
-      color: '#8B2635',
+      color: '#7D98A1',
     },
   },
   selected: {},
@@ -71,6 +73,10 @@ export default function Navbar(props) {
   return (
     <>
       <nav>
+        <div className="header">
+          <div className="header-name">Anderson Chan</div>
+          <div className="title">Software Engineer</div>
+        </div>
         <div className={classes.root}>
           <div className={classes.tabs}>
             <AntTabs value={value} onChange={handleChange} aria-label="tabs">
@@ -82,14 +88,50 @@ export default function Navbar(props) {
             <Typography className={classes.padding} />
           </div>
         </div>
+        <div className="header-right">
+          <a
+            href="https://www.linkedin.com/in/andersonchan4574/"
+            aria-label="LinkedIn"
+          >
+            <LinkedInIcon fontSize="large" />
+          </a>
+          <a href="https://github.com/ac4574" aria-label="Github">
+            <GitHubIcon fontSize="large" />
+          </a>
+      </div>
       </nav>
       <style jsx>
       {`
         nav {
+          align-items: center;
+          position: fixed;
+          top: 0;
+          z-index: 10000;
+          width: 100%;
           display: flex;
-          margin-left: 40vw;
-          margin-right: 40vw;
+          flex-direction: column;
+          background-color: #080808;
+          height: 8.5em;
+          padding-top: 1em;
 
+        }
+        .header {
+        }
+        .header-name {
+          text-align: center;
+          font-weight: bold;
+        }
+        .title {
+          color: #999999;
+        }
+        .header-right {
+          display: flex;
+          position: absolute;
+          right: 30px;
+          align-items: center;
+        }
+        a {
+          color: white;
         }
       `}
       </style>
