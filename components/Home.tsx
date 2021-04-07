@@ -8,21 +8,60 @@ export default function Home() {
         <img src="wave.png" alt="wave" />
         <img src="yellow-heart.png" alt="heart" />
       </div>
-      <div id="home-container">
-        <div id="stats">YOOOO</div>
+      <div id="about-container">
+        <div id="stats">
+          Stats & Vitals
+          <div id="born">
+            <div id="past">
+              0 - 7 Born and raised in Foz do Iguaçu, State of Paraná, Brazil.
+            </div>
+            <div id="present">
+              7 - present Kickin' it in the Greater New York area.
+            </div>
+          </div>
+          <div className="stats-list" id="techstack">
+            Tech Stack
+            <div id="stack">
+              JavaScript, React, React-Redux, HTML, CSS, Node.js, Express.js,
+              Sequelize, PostgreSQL, Next.js
+            </div>
+          </div>
+          <div className="stats-list" id="citizenships">
+            Citizenships
+            <div id="citizenship-list">United States, Brazil, Hong Kong</div>
+          </div>
+          <div className="stats-list" id="human-languages">
+            Human Languages
+            <div id="language-list">
+              English, Portuguese, Cantonese, Spanish
+            </div>
+          </div>
+        </div>
         <div className="home-pic">
           <img src="prof2.jpg" alt="" />
         </div>
       </div>
-
+      <div id="projects-container">PROJECTS</div>
+      <div id="hobbies-container">HOBBIES</div>
       <style jsx>
         {`
+          #about-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: #f5efdf;
+            justify-content: center;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-family: 'Alata';
+            font-size: 20px;
+            overflow-wrap: break-word;
+          }
           .home {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #f5efdf;
             height: auto;
             padding-bottom: 3em;
           }
@@ -41,10 +80,18 @@ export default function Home() {
           .home-pic {
             display: flex;
             justify-content: center;
-            width: 70vw;
+            // width: 70vw;
           }
           .home-pic img {
-            height: 65vh;
+            height: 50vh;
+          }
+          #stats {
+            margin-right: 5em;
+            color: black;
+          }
+          .stats-list {
+            padding-top: 1em;
+            padding-bottom: 1em;
           }
         `}
       </style>

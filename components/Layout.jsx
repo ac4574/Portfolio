@@ -29,6 +29,8 @@ export default function Layout({ children }) {
             content="width=device-width, initial-scale=1, minimum-scale=1"
           />
           <link rel="icon" href="/favicon.ico" />
+          <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'/>
+
       </Head>
       <div id="header">
         <Navbar value={value} setValue={setValue}/>
