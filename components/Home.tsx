@@ -8,9 +8,13 @@ export default function Home() {
         <img src="wave.png" alt="wave" />
         <img src="yellow-heart.png" alt="heart" />
       </div>
-      <div className="home-pic">
-        <img src="prof2.jpg" alt="" />
+      <div id="home-container">
+        <div id="stats">YOOOO</div>
+        <div className="home-pic">
+          <img src="prof2.jpg" alt="" />
+        </div>
       </div>
+
       <style jsx>
         {`
           .home {
