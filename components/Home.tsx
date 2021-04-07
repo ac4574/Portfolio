@@ -5,7 +5,8 @@ export default function Home() {
     <div className="home">
       <div className="hello">
         Hey there! I'm Anderson
-        <img src="wave.png" alt="" />
+        <img src="wave.png" alt="wave" />
+        <img src="yellow-heart.png" alt="heart" />
       </div>
       <div className="home-pic">
         <img src="prof2.jpg" alt="" />
@@ -28,9 +29,10 @@ export default function Home() {
             background-color: #1c2321;
             width: 100%;
             margin-bottom: 0.5em;
+            padding-top: 0.2em;
           }
           .hello img {
-            height: 2em;
+            height: 1.5em;
           }
           .home-pic {
             display: flex;

@@ -6,6 +6,7 @@ import Projects from './Projects'
 import About from './About'
 import Contact from './Contact'
 import Home from './Home'
+import Footer from './Footer'
 
 
 export default function Layout({ children }) {
@@ -30,24 +31,22 @@ export default function Layout({ children }) {
           <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="header">
-        {/* <Header /> */}
-        {/* <hr/> */}
         <Navbar value={value} setValue={setValue}/>
-        <main>{children}</main>
+        {/* <main>{children}</main> */}
       </div>
       {value === 'home' ? <Home/> : ''}
       {value === 'about' ? <About/> : ''}
       {value === 'projects' ? <Projects/> : ''}
       {value === 'contact' ? <Contact/> : ''}
-
+      <Footer />
       <style jsx>
       {`
         #page-container {
           position: relative;
-          min-height: 100vh;
+          min-height: auto;
           width: 100%;
           padding-top: 8.5em;
-          padding-bottom: 12rem;
+          // padding-bottom: 12rem;
         }
         #header {
           width: 100vw;

@@ -4,11 +4,8 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
-        <meta
-          name="og:title"
-          content="???"
-        />
+        <title>Anderson Chan</title>
+        <meta name="og:title" content="???" />
       </Head>
     </>
   )
