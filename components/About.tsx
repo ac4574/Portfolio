@@ -12,27 +12,20 @@ export default function aboutPage() {
         <div className="about-text">
           <h2>ABOUT</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            Hi, I'm Anderson Chan -- a software engineer specializing in UI
+            development.
           </p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            My goal as an engineer is and always will be to make your life
+            simpler, more convenient, and more productive.
           </p>
+          <p>
+            I studied Economics at New York University before eventually
+            pivoting my career to software development. Through Fullstack
+            Academy, I pursued my new career, eventually working for Fullstack
+            as a fellow.
+          </p>
+          <p>Outside of work, I'm a huge fan of competition. </p>
         </div>
         <div className="about-pictures">
           <img src="prof.jpeg" alt="" />
@@ -49,19 +42,21 @@ export default function aboutPage() {
             align-items: center;
             justify-content: center;
             background-color: #d3efbd;
-            height: 75vh;
+            padding-top: 2em;
+            padding-bottom: 2em;
           }
           .about-text {
             display: flex;
             flex-direction: column;
             color: black;
-            width: 584px;
+            width: 35vw;
+            font-size: 21px;
           }
           .about-pictures {
             display: flex;
             flex-direction: column;
             margin-left: 32px;
-            width: 544px;
+            width: 40vw;
           }
           #header-about {
             text-align: center;

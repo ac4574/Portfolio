@@ -88,6 +88,7 @@ export default function Home() {
           #stats {
             margin-right: 5em;
             color: black;
+            width: 35vw;
           }
           .stats-list {
             padding-top: 1em;
