@@ -22,7 +22,7 @@ export default class ProjectsPage extends Component {
             url="https://ricks-sporting-goods.herokuapp.com/"
           />
           <ProjectCard
-            name="Speech to Text Productivity"
+            name="Speech to Text Productivity (WIP)"
             description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
             url="https://github.com/ac4574/SpeechToText"
           />

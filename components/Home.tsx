@@ -1,5 +1,8 @@
 import React from 'react'
-
+import ComputerIcon from '@material-ui/icons/Computer'
+import LanguageIcon from '@material-ui/icons/Language'
+import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver'
+;<span className="stats-pop"></span>
 export default function Home() {
   return (
     <div className="home">
@@ -10,28 +13,38 @@ export default function Home() {
       </div>
       <div id="about-container">
         <div id="stats">
-          Stats & Vitals
+          <span className="stats-pop">STATS & VITALS</span>
           <div id="born">
             <div id="past">
-              0 - 7 Born and raised in Foz do Iguaçu, State of Paraná, Brazil.
+              <span className="stats-pop">0 - 7</span> Born and raised in{' '}
+              <span className="stats-pop">Foz do Iguaçu, Brazil.</span>
             </div>
             <div id="present">
-              7 - present Kickin' it in the Greater New York area.
+              <span className="stats-pop">7 - present</span> Kickin' it in the
+              <span className="stats-pop"> Greater New York Area.</span>
             </div>
           </div>
           <div className="stats-list" id="techstack">
-            Tech Stack
+            <span className="stats-pop flex">
+              <ComputerIcon /> Tech Stack
+            </span>
             <div id="stack">
               JavaScript, TypeScript, React, React-Redux, HTML, CSS, Node.js,
               Express.js, Sequelize, PostgreSQL, Next.js
             </div>
           </div>
           <div className="stats-list" id="citizenships">
-            Citizenships
+            <span className="stats-pop flex">
+              <LanguageIcon /> Citizenships
+            </span>
+
             <div id="citizenship-list">United States, Brazil, Hong Kong</div>
           </div>
           <div className="stats-list" id="human-languages">
-            Human Languages
+            <span className="stats-pop flex">
+              <RecordVoiceOverIcon /> Human Languages
+            </span>
+
             <div id="language-list">
               English, Portuguese, Cantonese, Spanish
             </div>
@@ -90,13 +103,23 @@ export default function Home() {
             height: 50vh;
           }
           #stats {
-            margin-right: 5em;
+            margin-right: 2em;
             color: black;
-            width: 35vw;
+            width: 30vw;
           }
           .stats-list {
             padding-top: 1em;
             padding-bottom: 1em;
+          }
+          .stats-pop {
+            color: #ef6f6c;
+          }
+          .flex {
+            display: flex;
+            align-items: center;
+          }
+          .flex svg {
+            padding-right: 10px;
           }
         `}
       </style>
