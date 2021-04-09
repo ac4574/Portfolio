@@ -13,7 +13,7 @@ export default function aboutPage() {
       <div className="about-container">
         <div className="about-text">
           <p>
-            Hi, I'm Anderson Chan -- a software engineer specializing in UI
+            Hi, I'm Anderson Chan — a software engineer specializing in UI
             development.
           </p>
           <p>

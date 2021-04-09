@@ -38,11 +38,15 @@ export default function Home() {
               <LanguageIcon /> Citizenships
             </span>
 
-            <div id="citizenship-list">United States, Brazil, Hong Kong</div>
+            <div id="citizenship-list">
+              United States <img src="usa.png" alt="usa" />, Brazil{' '}
+              <img src="brazil.png" alt="brazil" />, Hong Kong{' '}
+              <img src="hongkong.png" alt="hongkong" />
+            </div>
           </div>
           <div className="stats-list" id="human-languages">
             <span className="stats-pop flex">
-              <RecordVoiceOverIcon /> Human Languages
+              <RecordVoiceOverIcon /> Earthling Languages
             </span>
 
             <div id="language-list">
@@ -51,7 +55,7 @@ export default function Home() {
           </div>
         </div>
         <div className="home-pic">
-          <img src="prof2.jpg" alt="" />
+          <img src="prof1-small-edited3.jpeg" alt="me" />
         </div>
       </div>
       <div id="projects-container">PROJECTS</div>
@@ -62,7 +66,8 @@ export default function Home() {
             display: flex;
             flex-direction: row;
             width: 100%;
-            background-color: #f5efdf;
+            // background-color: #f5efdf;
+            background-color: #496a81;
             justify-content: center;
             padding-top: 2em;
             padding-bottom: 2em;
@@ -87,7 +92,7 @@ export default function Home() {
             font-weight: bold;
             background-color: #1c2321;
             width: 100%;
-            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
             padding-top: 0.2em;
           }
           .hello img {
@@ -104,7 +109,7 @@ export default function Home() {
           }
           #stats {
             margin-right: 2em;
-            color: black;
+            color: white;
             width: 30vw;
           }
           .stats-list {
@@ -112,14 +117,15 @@ export default function Home() {
             padding-bottom: 1em;
           }
           .stats-pop {
-            color: #ef6f6c;
+            color: #ade8ff;
+            // color: #628aa7;
           }
           .flex {
             display: flex;
             align-items: center;
           }
-          .flex svg {
-            padding-right: 10px;
+          #citizenship-list img {
+            height: 30px;
           }
         `}
       </style>
