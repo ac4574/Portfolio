@@ -51,8 +51,11 @@ export default class ProjectsPage extends Component {
               height: auto;
             }
             #header-projects {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               text-align: center;
-              font-size: 50px;
+              font-size: 60px;
               font-weight: bold;
               background-color: #1c2321;
               width: 100%;
@@ -60,7 +63,8 @@ export default class ProjectsPage extends Component {
               padding-top: 0.2em;
             }
             #header-projects img {
-              height: 1.5em;
+              margin-left: 10px;
+              height: 70px;
             }
           `}
         </style>

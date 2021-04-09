@@ -22,8 +22,8 @@ export default function Home() {
           <div className="stats-list" id="techstack">
             Tech Stack
             <div id="stack">
-              JavaScript, React, React-Redux, HTML, CSS, Node.js, Express.js,
-              Sequelize, PostgreSQL, Next.js
+              JavaScript, TypeScript, React, React-Redux, HTML, CSS, Node.js,
+              Express.js, Sequelize, PostgreSQL, Next.js
             </div>
           </div>
           <div className="stats-list" id="citizenships">
@@ -66,8 +66,11 @@ export default function Home() {
             padding-bottom: 3em;
           }
           .hello {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            font-size: 50px;
+            font-size: 60px;
             font-weight: bold;
             background-color: #1c2321;
             width: 100%;
@@ -75,7 +78,8 @@ export default function Home() {
             padding-top: 0.2em;
           }
           .hello img {
-            height: 1.5em;
+            height: 70px;
+            margin-left: 10px;
           }
           .home-pic {
             display: flex;

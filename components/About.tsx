@@ -6,11 +6,12 @@ export default function aboutPage() {
   return (
     <div className="about">
       <div id="header-about">
-        About <img src="laptop.png" alt="laptop" />
+        About <img src="globe.png" alt="globe" />
+        <img src="rice.png" alt="rice" />{' '}
+        {/* <img src="joystick.png" alt="joystick" /> */}
       </div>
       <div className="about-container">
         <div className="about-text">
-          <h2>ABOUT</h2>
           <p>
             Hi, I'm Anderson Chan -- a software engineer specializing in UI
             development.
@@ -23,9 +24,9 @@ export default function aboutPage() {
             I studied Economics at New York University before eventually
             pivoting my career to software development. Through Fullstack
             Academy, I pursued my new career, eventually working for Fullstack
-            as a fellow.
+            as a fellow. Now...
           </p>
-          <p>Outside of work, I'm a huge fan of competition. </p>
+          <p>Outside of work, I'm a huge fan of competition...</p>
         </div>
         <div className="about-pictures">
           <img src="prof.jpeg" alt="" />
@@ -59,8 +60,11 @@ export default function aboutPage() {
             width: 40vw;
           }
           #header-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            font-size: 50px;
+            font-size: 60px;
             font-weight: bold;
             background-color: #1c2321;
             width: 100%;
@@ -68,7 +72,8 @@ export default function aboutPage() {
             padding-top: 0.2em;
           }
           #header-about img {
-            height: 1.5em;
+            margin-left: 10px;
+            height: 70px;
           }
         `}
       </style>
