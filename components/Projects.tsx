@@ -11,24 +11,24 @@ export default class ProjectsPage extends Component {
         <div className="projects-container">
           <ProjectCard
             name="React Hookify"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            description="Command Line tool that converts React class components into functional components with Hooks. React has big plans for React Hooks going forward and this tool helps people make the transition."
             imgURL="reacthook.png"
             url="https://www.npmjs.com/package/react-hookify"
           />
           <ProjectCard
             name="Rick's Sporting Goods"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            description="A mock e-commerce website selling sports goods"
             imgURL="ricks.png"
             url="https://ricks-sporting-goods.herokuapp.com/"
           />
           <ProjectCard
             name="Speech to Text Productivity (WIP)"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            description="Productivity tool for..."
             url="https://github.com/ac4574/SpeechToText"
           />
           <ProjectCard
             name="React Hookify Documentation Website"
-            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            description="Documentation website for React Hookify. Also inclues a demo area where you can try the tool in the browser without installing."
             imgURL="hookwebs.png"
             url="https://react-hookify.now.sh/"
           />
