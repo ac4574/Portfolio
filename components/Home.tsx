@@ -106,6 +106,7 @@ export default function Home() {
           }
           .home-pic img {
             height: 50vh;
+            border-radius: 3px;
           }
           #stats {
             margin-right: 2em;

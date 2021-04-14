@@ -11,7 +11,7 @@ export default class ProjectsPage extends Component {
         <div className="projects-container">
           <ProjectCard
             name="React Hookify"
-            description="Command Line tool that converts React class components into functional components with Hooks. React has big plans for React Hooks going forward and this tool helps people make the transition."
+            description="Command Line tool that converts React class components into functional components with Hooks. React has big plans for React Hooks going forward and this tool helps developers make the transition."
             imgURL="reacthook.png"
             url="https://www.npmjs.com/package/react-hookify"
           />
