@@ -125,7 +125,12 @@ export default function Home() {
             display: flex;
             align-items: center;
           }
+          #citizenship-list {
+            display: flex;
+            align-items: center;
+          }
           #citizenship-list img {
+            padding-left: 10px;
             height: 30px;
           }
         `}
