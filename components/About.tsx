@@ -6,7 +6,6 @@ export default function aboutPage() {
       <div id="header-about">
         About <img src="globe.png" alt="globe" />
         <img src="rice.png" alt="rice" />{' '}
-        {/* <img src="joystick.png" alt="joystick" /> */}
       </div>
       <div className="about-container">
         <div className="about-text">
@@ -28,9 +27,6 @@ export default function aboutPage() {
         </div>
         <div className="about-pictures">
           <img src="prof.jpeg" alt="" />
-          {/* <img src="prof2.jpg" alt=""/> */}
-          {/* <img src="dumpling.jpg" alt=""/> */}
-          {/* <img src="prof3.jpeg" alt=""/> */}
         </div>
       </div>
 
