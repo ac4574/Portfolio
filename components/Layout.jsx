@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Navbar from './Navbar'
-// import Header from './Header'
 import React from 'react';
 import Projects from './Projects'
 import About from './About'
@@ -34,7 +33,6 @@ export default function Layout({ children }) {
       </Head>
       <div id="header">
         <Navbar value={value} setValue={setValue}/>
-        {/* <main>{children}</main> */}
       </div>
       {value === 'home' ? <Home/> : ''}
       {value === 'about' ? <About/> : ''}
