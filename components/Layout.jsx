@@ -8,7 +8,7 @@ import Home from './Home'
 import Footer from './Footer'
 
 
-export default function Layout({ children }) {
+export default function Layout({}) {
   const [value, setValue] = React.useState('home');
 
   return (
