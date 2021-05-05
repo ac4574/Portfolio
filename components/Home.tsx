@@ -29,7 +29,7 @@ export default function Home() {
               <ComputerIcon /> Tech Stack
             </span>
             <div id="stack">
-              JavaScript, TypeScript, React, React-Redux, HTML, CSS, Node.js,
+              JavaScript, TypeScript, React, Redux, HTML, CSS, Node.js,
               Express.js, Sequelize, PostgreSQL, Next.js
             </div>
           </div>

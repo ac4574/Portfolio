@@ -8,18 +8,21 @@ export default function contactPage() {
         <img src="mail.png" alt="mail" />
       </div>
       <div id="contact-container">
-        <img src="dumpling.jpg" alt="dumpling" />
         <div id="contact-info">
+          <h1>Info</h1>
+          <p>Here's where you can reach me:</p>
           <p>Email: andersonchan4574@gmail.com (Preferred)</p>
-          <p>
-            LinkedIn:{' '}
-            <a href="https://www.linkedin.com/in/andersonchan4574/">
-              https://www.linkedin.com/in/andersonchan4574/
-            </a>
-          </p>
-
           <p>Phone: 732-642-7633</p>
+
+          <h1>LinkedIn</h1>
+          <p>
+            Feel free to connect with me on{' '}
+            <a href="https://www.linkedin.com/in/andersonchan4574/">LinkedIn</a>{' '}
+            as well!
+          </p>
         </div>
+
+        <img src="dumpling.jpg" alt="dumpling" />
       </div>
       <style jsx>
         {`
@@ -28,7 +31,7 @@ export default function contactPage() {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #9fa4c4;
+            background-color: #ebffff;
             height: auto;
           }
           #header-contact {
@@ -49,6 +52,7 @@ export default function contactPage() {
           }
           #contact-container {
             display: flex;
+            flex-direction: column;
             color: black;
             padding-top: 2em;
           }
@@ -56,12 +60,12 @@ export default function contactPage() {
             font-size: 30px;
           }
           #contact-info a {
-            text-decoration: none;
-            color: inherit;
+            // text-decoration: none;
+            color: #f46036;
           }
           #contact-container img {
             margin-right: 35px;
-            max-height: 40em;
+            // max-height: 40em;
             padding-bottom: 2em;
           }
         `}
