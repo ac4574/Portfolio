@@ -2,7 +2,6 @@ import React from 'react'
 import ComputerIcon from '@material-ui/icons/Computer'
 import LanguageIcon from '@material-ui/icons/Language'
 import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver'
-;<span className="stats-pop"></span>
 export default function Home() {
   return (
     <div className="home">

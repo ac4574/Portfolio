@@ -91,10 +91,11 @@ export default function Navbar(props) {
           <a
             href="https://www.linkedin.com/in/andersonchan4574/"
             aria-label="LinkedIn"
+            target="_blank" rel="noopener noreferrer"
           >
             <LinkedInIcon fontSize="large" />
           </a>
-          <a href="https://github.com/ac4574" aria-label="Github">
+          <a href="https://github.com/ac4574" target="_blank" rel="noopener noreferrer" aria-label="Github">
             <GitHubIcon fontSize="large" />
           </a>
       </div>

@@ -11,18 +11,24 @@ export default function contactPage() {
         <div id="contact-info">
           <h1>Info</h1>
           <p>Here's where you can reach me:</p>
-          <p>Email: andersonchan4574@gmail.com (Preferred)</p>
+          <p>Email: andersonchan4574@gmail.com</p>
           <p>Phone: 732-642-7633</p>
 
           <h1>LinkedIn</h1>
           <p>
             Feel free to connect with me on{' '}
-            <a href="https://www.linkedin.com/in/andersonchan4574/">LinkedIn</a>{' '}
+            <a
+              href="https://www.linkedin.com/in/andersonchan4574/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>{' '}
             as well!
           </p>
         </div>
 
-        <img src="dumpling.jpg" alt="dumpling" />
+        <img src="dumpling edited.png" alt="dumpling" />
       </div>
       <style jsx>
         {`
@@ -31,7 +37,7 @@ export default function contactPage() {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #ebffff;
+            background-color: #fceeee;
             height: auto;
           }
           #header-contact {
@@ -52,7 +58,7 @@ export default function contactPage() {
           }
           #contact-container {
             display: flex;
-            flex-direction: column;
+            // flex-direction: column;
             color: black;
             padding-top: 2em;
           }
@@ -64,9 +70,16 @@ export default function contactPage() {
             color: #f46036;
           }
           #contact-container img {
-            margin-right: 35px;
+            margin-left: 35px;
             // max-height: 40em;
             padding-bottom: 2em;
+          }
+          p {
+            margin: 5px;
+            font-family: 'Alata';
+          }
+          h1 {
+            margin-bottom: 10px;
           }
         `}
       </style>

@@ -14,7 +14,7 @@ export default function Layout({}) {
   return (
     <div id="page-container">
       <Head>
-        <title>Anderson's Portfolio</title>
+        <title>Anderson Chan</title>
           <meta
             name="description"
             content="???"

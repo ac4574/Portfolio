@@ -30,6 +30,29 @@ export default function aboutPage() {
         </div>
       </div>
 
+      <div className="hobbies-container">
+        <div className="about-text">
+          <p>
+            Hi, I'm Anderson Chan — a software engineer specializing in
+            Frontend.
+          </p>
+          <p>
+            My goal as an engineer is and always will be to make your life
+            simpler, more convenient, and more productive.
+          </p>
+          <p>
+            I studied Economics at New York University before eventually
+            pivoting my career to software development. Through Fullstack
+            Academy, I pursued my new career, eventually working for Fullstack
+            as a fellow. Now...
+          </p>
+          <p>Outside of work, I'm a huge fan of competition...</p>
+        </div>
+        <div className="about-pictures">
+          <img src="prof3.png" alt="" />
+        </div>
+      </div>
+
       <style jsx>
         {`
           .about-container {
@@ -39,6 +62,16 @@ export default function aboutPage() {
             background-color: #d3efbd;
             padding-top: 2em;
             padding-bottom: 2em;
+            font-family: 'Alata';
+          }
+          .hobbies-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #c3fdec;
+            padding-top: 2em;
+            padding-bottom: 2em;
+            font-family: 'Alata';
           }
           .about-text {
             display: flex;

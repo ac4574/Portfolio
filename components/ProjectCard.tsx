@@ -43,13 +43,19 @@ export default function ProjectCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </a>
       </CardActions>
+      <style jsx>
+        {`
+          a {
+            text-decoration: none;
+          }
+        `}
+      </style>
     </Card>
   )
 }
