@@ -2,6 +2,8 @@ import React from 'react'
 import ComputerIcon from '@material-ui/icons/Computer'
 import LanguageIcon from '@material-ui/icons/Language'
 import RecordVoiceOverIcon from '@material-ui/icons/RecordVoiceOver'
+import Carousel from './Carousel.js'
+
 export default function Home() {
   return (
     <div className="home">
@@ -57,8 +59,9 @@ export default function Home() {
           <img src="prof1-small-edited3.jpeg" alt="me" />
         </div>
       </div>
-      <div id="projects-container">PROJECTS</div>
-      <div id="hobbies-container">HOBBIES</div>
+      <div id="projects-container">
+        <Carousel />
+      </div>
       <style jsx>
         {`
           #about-container {
