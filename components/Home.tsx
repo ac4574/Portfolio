@@ -77,6 +77,13 @@ export default function Home() {
             font-size: 20px;
             overflow-wrap: break-word;
           }
+          #projects-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+          }
           .home {
             display: flex;
             flex-direction: column;

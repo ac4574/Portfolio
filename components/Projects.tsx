@@ -40,6 +40,7 @@ export default class ProjectsPage extends Component {
               display: flex;
               flex-direction: row;
               align-items: center;
+              justify-content: center;
               height: 65vh;
             }
             .projects {

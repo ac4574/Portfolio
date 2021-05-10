@@ -10,17 +10,18 @@ import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles({
   root: {
-    width: '19%',
-    height: 400,
+    display: 'flex',
+    width: '60%',
+    height: 450,
     margin: 20,
   },
   media: {
-    height: 140,
+    height: 450,
     backgroundColor: 'black',
   },
 })
 
-export default function ProjectCard(props) {
+export default function BigProjectCard(props) {
   const classes = useStyles()
   const { name, description, imgURL, url } = props
   return (
@@ -42,13 +43,7 @@ export default function ProjectCard(props) {
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <Button size="small" color="primary">
-            Learn More
-          </Button>
-        </a>
-      </CardActions>
+
       <style jsx>
         {`
           a {
