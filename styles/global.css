@@ -26,3 +26,8 @@ body {
   text-align: center;
   padding: 5px;
 }
+
+.MuiMobileStepper-root {
+  background: #1f1d1d !important;
+  justify-content: center !important;
+}
