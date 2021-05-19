@@ -10,11 +10,12 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     width: '60%',
-    height: 450,
+    height: 350,
     margin: 20,
+    backgroundColor: '#E2E0DF',
   },
   media: {
-    height: 450,
+    height: 350,
     width: '100%',
     backgroundColor: 'black',
   },
@@ -38,7 +39,7 @@ export default function BigProjectCard(props) {
         <Typography gutterBottom variant="h5" component="h2">
           {name}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="h5" color="textSecondary" component="p">
           {description}
         </Typography>
       </CardContent>

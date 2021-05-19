@@ -52,6 +52,7 @@ export default class homeCarousel extends Component {
           <BigProjectCard
             name="Speech to Text Productivity (WIP)"
             description="Productivity tool for..."
+            imgURL="speechtotext.png"
             url="https://github.com/ac4574/SpeechToText"
           />
           </div>
@@ -59,7 +60,7 @@ export default class homeCarousel extends Component {
           <BigProjectCard
             name="React Hookify Documentation Website"
             description="Documentation website for React Hookify. Also inclues a demo area where you can try the tool in the browser without installing."
-            imgURL="hookwebs.png"
+            imgURL="demoarea.png"
             url="https://react-hookify.now.sh/"
           />
           </div>
