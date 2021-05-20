@@ -68,7 +68,6 @@ export default function Home() {
             display: flex;
             flex-direction: row;
             width: 100%;
-            // background-color: #f5efdf;
             background-color: #496a81;
             justify-content: center;
             padding-top: 2em;
@@ -111,7 +110,6 @@ export default function Home() {
           .home-pic {
             display: flex;
             justify-content: center;
-            // width: 70vw;
           }
           .home-pic img {
             height: 50vh;
@@ -128,7 +126,6 @@ export default function Home() {
           }
           .stats-pop {
             color: #ade8ff;
-            // color: #628aa7;
           }
           .flex {
             display: flex;
