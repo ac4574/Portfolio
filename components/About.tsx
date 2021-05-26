@@ -10,8 +10,8 @@ export default function aboutPage() {
       <div className="about-container">
         <div className="about-text">
           <p>
-            Hi, I'm Anderson Chan — a software engineer specializing in
-            Frontend.
+            Hi, I'm Anderson Chan — a software engineer specializing in Frontend
+            development.
           </p>
           <p>
             My goal as an engineer is and always will be to make your life
