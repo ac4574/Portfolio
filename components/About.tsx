@@ -5,7 +5,7 @@ export default function aboutPage() {
     <div className="about">
       <div id="header-about">
         About <img src="globe.png" alt="globe" />
-        <img src="rice.png" alt="rice" />{' '}
+        <img src="rice.png" alt="ricebowl" />{' '}
       </div>
       <div className="about-container">
         <div className="about-text">
