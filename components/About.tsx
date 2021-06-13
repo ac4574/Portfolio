@@ -32,7 +32,7 @@ export default function aboutPage() {
       </div>
       <div id="header-about">
         Hobbies <img src="joystick.png" alt="joystick" />
-        <img src="sushi.png" alt="sushi" />{' '}
+        <img src="sushi.png" alt="sushi" />
       </div>
       <div className="hobbies-container">
         <div className="fighting-container">
