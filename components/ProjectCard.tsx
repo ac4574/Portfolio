@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 export default function ProjectCard(props) {
   const classes = useStyles()
-  const { name, description, imgURL, url } = props
+  const { name, description, imgURL, url, interactionButton } = props
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -45,7 +45,7 @@ export default function ProjectCard(props) {
       <CardActions>
         <a href={url} target="_blank" rel="noopener noreferrer">
           <Button size="small" color="primary">
-            Learn More
+            {interactionButton}
           </Button>
         </a>
       </CardActions>

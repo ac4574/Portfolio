@@ -51,7 +51,7 @@ export default class homeCarousel extends Component {
           <div className="project-slide">
           <BigProjectCard
             name="Speech to Text Productivity (WIP)"
-            description="Productivity tool for..."
+            description="Productivity tool that translates your speech into a frequency table of all the words spoken"
             imgURL="speechtotext.png"
             url="https://github.com/ac4574/SpeechToText"
           />
