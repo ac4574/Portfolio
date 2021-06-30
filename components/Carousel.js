@@ -45,7 +45,7 @@ export default class homeCarousel extends Component {
             name="Rick's Sporting Goods"
             description="A mock e-commerce website selling sports goods"
             imgURL="ricks.png"
-            url="https://ricks-sporting-goods.herokuapp.com/"
+            url="https://rick-sporting-goods.herokuapp.com/"
           />
           </div>
           <div className="project-slide">
